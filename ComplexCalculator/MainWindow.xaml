@@ -1,0 +1,75 @@
+﻿<Window x:Class="ComplexMath.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        Background="#f0f0f0">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderBrush" Value="#005A9E" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="3" />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBox Width="100" Text="{Binding Number1.Real, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <TextBlock Text="+" VerticalAlignment="Center" />
+            <TextBox Width="100" Text="{Binding Number1.Imaginary, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <TextBlock Text="i" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+            <TextBox Width="100" Text="{Binding Number2.Real, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <TextBlock Text="+" VerticalAlignment="Center" />
+            <TextBox Width="100" Text="{Binding Number2.Imaginary, UpdateSourceTrigger=PropertyChanged}" Margin="5" />
+            <TextBlock Text="i" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Add" Command="{Binding AddCommand}" Style="{StaticResource RoundedButtonStyle}" Margin="5" />
+            <Button Content="Multiply" Command="{Binding MultiplyCommand}" Style="{StaticResource RoundedButtonStyle}"
+                    Margin="5" />
+            <Button Content="Divide" Command="{Binding DivideCommand}" Style="{StaticResource RoundedButtonStyle}"
+                    Margin="5" />
+        </StackPanel>
+
+        <Border Grid.Row="3" Background="White" BorderBrush="Gray" BorderThickness="2" Padding="10" CornerRadius="10"
+                Margin="10">
+            <TextBlock Text="{Binding Result}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Foreground="#007ACC" />
+        </Border>
+    </Grid>
+</Window>

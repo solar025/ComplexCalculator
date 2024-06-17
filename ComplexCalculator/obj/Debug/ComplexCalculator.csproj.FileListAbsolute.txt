@@ -1,0 +1,15 @@
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\bin\Debug\ComplexCalculator.exe.config
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\bin\Debug\ComplexCalculator.exe
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\bin\Debug\ComplexCalculator.pdb
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.csproj.AssemblyReference.cache
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\MainWindow.baml
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\App.g.cs
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator_Content.g.cs
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator_MarkupCompile.cache
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.g.resources
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexMath.Properties.Resources.resources
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.csproj.GenerateResource.cache
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.exe
+C:\Users\Coldborne\RiderProjects\Students\Olga\ComplexMath\ComplexCalculator\obj\Debug\ComplexCalculator.pdb
